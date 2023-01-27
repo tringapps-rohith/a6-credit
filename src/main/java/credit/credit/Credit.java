@@ -42,14 +42,7 @@ class Credit implements Cloneable
                 Credit c1=(Credit)c.clone();
                 l.info("Enter the card no to check by equals method\n");
                 String no1=sin.next();
-                boolean res=c1.equals(no1);
-                if(res==true)
-                {
-                        l.info("The strings are same\n");
-                }
-                else
-                {
-                        l.info("The strings are not same\n");
-                }
+                l.info(c1.equals(no1));
+             
         }
 }
