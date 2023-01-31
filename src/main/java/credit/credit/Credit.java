@@ -24,9 +24,9 @@ class Credit implements cloneable
         {
                 return no.equals(no1);
         }
-        public Object clone() throws CloneNotSupportedException
+        public Object cloning() throws CloneNotSupportedException
         {
-                return super.clone();
+                return super.cloning();
         }
         public static void main(String [] args) throws CloneNotSupportedException
         {
@@ -39,7 +39,7 @@ class Credit implements cloneable
                 l.info("Enter expiry date\n");
                 String expdate=sin.next();
                 Credit c=new Credit(name,no,expdate);
-                Credit c1=(Credit)c.clone();
+                Credit c1=(Credit)c.cloning();
                 l.info("Enter the card no to check by equals method\n");
                 String no1=sin.next();
                 l.info(c1.equals(no1));
