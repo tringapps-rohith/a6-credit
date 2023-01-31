@@ -6,7 +6,7 @@ package credit.credit;
  */
 import java.util.*;
 import java.util.logging.Logger;
-class Credit implements Cloneable
+class Credit implements cloneable
 {
         private String name;
         private String no;
